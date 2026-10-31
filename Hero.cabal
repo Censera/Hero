@@ -1,0 +1,27 @@
+cabal-version:      3.4
+name:               Hero
+version:            0.0.0.1
+synopsis:           Initialize, check, and fix my project.
+-- description:
+homepage:           https://github.com/Censera/Hero
+license:            Apache-2.0
+license-file:       LICENSE
+author:             Censera
+maintainer:         Censera@proton.me
+-- copyright:
+category:           Development
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable Hero
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.18.3.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
